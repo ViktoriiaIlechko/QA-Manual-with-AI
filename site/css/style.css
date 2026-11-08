@@ -1,0 +1,331 @@
+/* =========================================
+   Загальні стилі
+   ========================================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2d3436;
+    background-color: #eef2f5;
+}
+
+h1, h2, h3 {
+    color: #1e3a5f;
+}
+
+/* =========================================
+   Шапка та навігація
+   ========================================= */
+#site-header {
+    background-color: #1e3a5f;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.nav-link {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.nav-link:hover {
+    background-color: #2f5d8c;
+}
+
+.nav-link.active {
+    background-color: #f0a500;
+    color: #1e3a5f;
+}
+
+/* =========================================
+   Основний контейнер і картки
+   ========================================= */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    margin-bottom: 25px;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+    margin-top: 0;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #f0a500;
+    display: inline-block;
+}
+
+.subsection-title {
+    margin-top: 25px;
+    color: #2f5d8c;
+}
+
+/* =========================================
+   Блок «Про мене»
+   ========================================= */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f0a500;
+    flex-shrink: 0;
+}
+
+.profile-photo.small {
+    width: 130px;
+    height: 130px;
+}
+
+.name {
+    margin: 0;
+    font-size: 36px;
+}
+
+.subtitle {
+    margin: 5px 0 15px;
+    color: #f0a500;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   Таблиці
+   ========================================= */
+.edu-table,
+.contact-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.edu-table caption {
+    caption-side: bottom;
+    padding-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+.edu-table th,
+.contact-table th {
+    background-color: #1e3a5f;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px;
+}
+
+.edu-table td,
+.contact-table td {
+    padding: 10px;
+    border-bottom: 1px solid #dfe6e9;
+    vertical-align: top;
+}
+
+.edu-table tbody tr:hover,
+.contact-table tbody tr:hover {
+    background-color: #fdf6e3;
+}
+
+.period {
+    font-weight: bold;
+    color: #2f5d8c;
+    white-space: nowrap;
+}
+
+.contact-type {
+    font-weight: bold;
+    width: 35%;
+}
+
+/* =========================================
+   Досвід роботи
+   ========================================= */
+.experience-list {
+    padding-left: 20px;
+}
+
+.job {
+    margin-bottom: 18px;
+}
+
+.job-title {
+    color: #1e3a5f;
+    font-size: 18px;
+}
+
+.job-period {
+    display: block;
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.job-tasks {
+    margin-top: 5px;
+    list-style-type: square;
+}
+
+/* =========================================
+   Навички, сертифікати, інтереси
+   ========================================= */
+.skills-list dt {
+    font-weight: bold;
+    color: #2f5d8c;
+    margin-top: 12px;
+}
+
+.skills-list dd {
+    margin-left: 0;
+    padding-left: 15px;
+    border-left: 3px solid #f0a500;
+}
+
+.cert-list li {
+    margin-bottom: 6px;
+}
+
+.interests-list {
+    padding: 0;
+    list-style: none;
+}
+
+.tag {
+    display: inline-block;
+    margin: 5px;
+    padding: 6px 14px;
+    background-color: #fdf6e3;
+    color: #1e3a5f;
+    border: 1px solid #f0a500;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* =========================================
+   Посилання та кнопки
+   ========================================= */
+.link {
+    color: #2f5d8c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #f0a500;
+    text-decoration: underline;
+}
+
+.back {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #1e3a5f;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #f0a500;
+    color: #1e3a5f;
+}
+
+/* =========================================
+   Галерея
+   ========================================= */
+.gallery-table {
+    width: calc(100% + 40px);
+    border-spacing: 20px;
+    margin: -20px -20px 0;
+}
+
+.gallery-item {
+    width: 50%;
+    padding: 15px;
+    background-color: #ffffff;
+    text-align: center;
+    vertical-align: top;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+.gallery-img:hover {
+    opacity: 1;
+}
+
+.caption {
+    margin: 10px 0 0;
+}
+
+/* =========================================
+   Підвал
+   ========================================= */
+#site-footer {
+    background-color: #1e3a5f;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+#site-footer h6 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* =========================================
+   Адаптивність для телефонів
+   ========================================= */
+@media (max-width: 600px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+
+    .gallery-item {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .gallery-table {
+        width: 100%;
+        margin: 0;
+        border-spacing: 0;
+    }
+}
